@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 120px" data-darkreader-mode="dynamic" data-darkreader-scheme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-in page</title>
+
+    <link href="css/signin.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="signin">
+        <!-- <div style="padding-left: 70%">
+            <button type="button" lang="cn" class="bth">kiswahili</button>
+            <button type="button" lang="en" class="bth">English</button>
+        </div>
+        <script>
+            $(".bth").click(function() {
+                var data = {
+                    lang: $(this).attr("lang"),
+                };
+                $.get("/index/login/lang.html", data, function() {
+                    location.reload();
+                });
+            });
+        </script> -->
+
+        <div class="signin-header">
+            <div class="system-logo">
+                <a href="/">
+                    <img src="" alt="" style="margin: 0 auto" />
+                </a>
+            </div>
+        </div>
+
+        <form action="" method="post" id="formid">
+            <div class="signin-content">
+                <div class="list">
+                    <label for="" class="item item-input">
+              <i class="input-icon ion--android-person"> </i>
+
+              <input
+                type="text"
+                placeholder="username"
+                name="username"
+                required
+                class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required"
+                value
+              />
+            </label>
+
+                    <label class="item item-input">
+              <i class="input-icon icon-locked"></i>
+
+              <input
+                type="password"
+                placeholder="password"
+                name="upwd"
+                aria-label="value"
+                style
+              />
+            </label>
+                </div>
+                <p>
+                    <span style="
+                text-align: left;
+                color: rgba(255, 255, 255);
+                --darkreader-inline-color: #e8e6e3;
+              " data-darkreader-inline-color>
+              <input
+                type="checkbox"
+                value="1"
+                name="remember"
+                style="-webkit-appearance: checkbox"
+                checked="checked"
+              />
+              Remember
+            </span>
+
+                    <span style="display: none">Forget Password?</span>
+                    <span class="ion-android-warning ng-hide" ng-show="show_sign_in_mistake" style>&nbsp; Wrong account or password, please re-enter!</span
+            >
+          </p>
+          <div class="signin-action">
+            <button
+              class="newbutton sign_button"
+              onclick="returncheckform(this.form)"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <div></div>
+    </div>
+  </body>
+</html>
